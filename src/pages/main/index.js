@@ -45,8 +45,11 @@ export default class Main extends Component {
   render(){
     const { products, page, productInfo } = this.state;
 
-    return (
+    return ( 
       <div className="product-list">
+        <div className="product-new">
+          <Link to="/newproduct/">Novo Produto</Link>
+        </div>
         {products.map(product =>(
           <article key={product._id}>
             <strong>{product.title}</strong>
@@ -59,6 +62,6 @@ export default class Main extends Component {
           <button disabled={page === productInfo.pages} onClick={this.nextPage}>Próxima</button>
         </div>
       </div>
-    );
+    )
   }
 }
