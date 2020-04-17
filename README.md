@@ -1,1 +1,1 @@
-Estudo de React desenvolvendo um front-End
+Estudo de React para desenvolver um front-End
